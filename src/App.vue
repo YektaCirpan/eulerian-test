@@ -17,6 +17,7 @@ const tree = reactive({
 <template>
   <main>
     <v-container>
+      <v-img class="mb-5" width="300" src="eulerian.png" alt="eulerian logo" />
       <v-row>
         <v-col cols="6">
           <v-sheet border rounded class="pa-5" color="grey-lighten-3">
@@ -26,7 +27,7 @@ const tree = reactive({
         <v-col cols="6">
           <v-card>
             <v-list>
-              <TreeView />
+              <TreeView :tree="tree" />
             </v-list>
           </v-card>
         </v-col>
